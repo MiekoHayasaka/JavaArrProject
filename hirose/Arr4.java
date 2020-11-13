@@ -10,7 +10,7 @@ public class Arr4{
 		int asum=0, bsum=0;
 		for(int i=0; i<num; i++){
 			for(int j=0; j<2; j++){
-				int index = new Random().nextInt(nums.length);
+				int index = new Random().nextInt(nums.length-(i*2+j));
 				int kuji = nums[index];
 				if(j==0){
 					asum += kuji;
